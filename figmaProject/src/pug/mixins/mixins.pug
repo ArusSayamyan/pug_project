@@ -1,0 +1,16 @@
+mixin list(img, name, date, time, price)
+    ul
+        li.user= img
+        li.name= name 
+        li.date= date 
+        li.time= time 
+        li.price= price
+
+mixin linkLoop()
+   - var droids = ["Design", "Product", "color"];
+        ul
+            for name in droids
+                li.card= name
+                    
+mixin link(href, name)
+  a(href=href)&attributes(attributes)= name
