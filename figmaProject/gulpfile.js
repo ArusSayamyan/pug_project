@@ -43,8 +43,8 @@ let path = {
     // webphtml      = require('gulp-webp-html'),
     // webpcss       = require('gulp-webpcss'),
     // svgSprite     = require('gulp-svg-sprite'),
-    // ttf2woff      = require('gulp-ttf2woff'),
-    // ttf2woff2     = require('gulp-ttf2woff2'),
+    ttf2woff      = require('gulp-ttf2woff'),
+    ttf2woff2     = require('gulp-ttf2woff2'),
     // fonter        = require('gulp-fonter');
  // favicons      = require('gulp-favicons'),
  // plumber       = require('gulp-plumber'),
@@ -76,6 +76,15 @@ function imgmin() {
     .pipe(gulp.dest(path.build.img));
 }
 
+function fonts(){
+    src(path.src.fonts)
+        .pipe(ttf2woff())
+        .pipe(dest(path.build.fonts))
+    return src(path.src.fonts)
+        .pipe(ttf2woff2())
+        .pipe(dest(path.build.fonts))
+}
+
  function server() {
     browsersync.init({
         server: {
@@ -93,13 +102,15 @@ function clean(params){
     return del(path.clean);
 }
 
-let watch =gulp.series(clean,views,sass,imgmin,gulp.parallel(watchFile,server));
+let watch =gulp.series(clean,views,sass,imgmin,fonts,gulp.parallel(watchFile,server));
+
 
 
 
 exports.views = views;
 exports.sass = sass;
 exports.imgmin = imgmin;
+exports.fonts = fonts;
 exports.server = server;
-exports.watch        = watch;
-exports.default      = watch;
+exports.watch  = watch;
+exports.default = watch;
