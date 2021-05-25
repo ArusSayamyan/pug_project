@@ -11,7 +11,7 @@
       * body .main_container .main_content {
         display: grid;
         grid-template-columns: auto auto;
-        grid-gap: 30px;
+        grid-gap: 80px;
         margin-bottom: 30px; }
         * body .main_container .main_content .link1 .btn,
         * body .main_container .main_content .link2 .btn {
@@ -76,26 +76,25 @@
             font-weight: bold;
             font-size: 22px;
             color: #00000083; }
-      * body .main_container .imgContent .links {
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-column: 1 / span 2; }
-        * body .main_container .imgContent .links .btn {
-          text-decoration: none;
-          color: black;
-          font-size: 20px; }
-      * body .main_container .imgContent .container3 {
-        object-fit: cover;
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: 202px;
-        grid-gap: 30px;
-        width: 100%;
-        margin-top: 30px; }
-        * body .main_container .imgContent .container3 .item1 {
-          grid-row: 1 / span 2; }
-        * body .main_container .imgContent .container3 .item2 {
-          grid-row: 1 / span 2; }
-        * body .main_container .imgContent .container3 .item5 {
-          grid-column: 4;
-          grid-row: 1 / span 2; }
+      * body .main_container .imgContent {
+        grid-column: 1/ span 2; }
+        * body .main_container .imgContent .links {
+          display: grid;
+          grid-template-columns: 100px 100px 100px;
+          grid-column: 1 / span 2; }
+          * body .main_container .imgContent .links .btn {
+            text-decoration: none;
+            color: black;
+            font-size: 20px; }
+        * body .main_container .imgContent .container3 {
+          display: grid;
+          grid-template: 1fr/2fr repeat(4, 1fr);
+          gap: 40px;
+          justify-items: stretch; }
+          * body .main_container .imgContent .container3 .item1 {
+            grid-row: 1 / span 2; }
+          * body .main_container .imgContent .container3 .item2 {
+            grid-row: 1 / span 2; }
+          * body .main_container .imgContent .container3 .item5 {
+            grid-column: 4;
+            grid-row: 1 / span 2; }
