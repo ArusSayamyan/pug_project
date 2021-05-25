@@ -2,34 +2,34 @@ extends main.pug
 include mixins/mixins.pug
 
 block content
-    .main_container
-        .main_content
-            .link1   
-                +link('#', 'Telescope')(class="btn")
-            .link2
-                +link('#', 'Asteroids')(class="btn")
-            .content
-                +list('./img/Photo.png','Chinmay Sarasvati','23 Sep 2019', '02:52PM', '$130.00')(class='list_item1')
-                +list('./img/user2.png','Dina Glenn','22 Sep 2019', '01:36AM', '$367.00')(class='list_item2')
-                +list('./img/user3.png','Izabella Tabakova','29 Oct 2019', '06:58PM', '$29.99')(class='list_item3')
-                +list('./img/user4.png','Opi Watihana','16 May 2019', '02:41PM', '$1240.29')(class='list_item4')
-            .container2 
-                +list('./img/user5.png','Babila Ebwélé','04 Apr 2019', '09:04AM', '$560.80')(class='list_item5')
-                +list('./img/user6.png','Brijamohan Mallick','06 Aug 2019', '08:22AM', '$765.00')(class='list_item6')
-                +list('./img/user7.png','Cayla Brister','07 Feb 2019', '07:02PM', '$78.00')(class='list_item7')
-                +list('./img/user8.png','Maeng Yeo-Jin','06 Aug 2019', '03:49AM', '$400.00')(class='list_item8')
-        .imgContent
-            .links    
-                +link('#', 'Design')(class="btn")
-                +link('#', 'Product')(class="btn")  
-                +link('#', 'Color')(class="btn")      
-            .container3        
-                img.item1(src="./img/image.jpg", alt="1")
-                img.item2(src="./img/image2.jpg", alt="1")
-                img.item3(src="./img/image3.png", alt="1")
-                img.item5(src="./img/image5.jpg", alt="1")
-                img.item4(src="./img/image4.png", alt="1")
-                img.item6(src="./img/image6.jpg", alt="1")
-                img.item7(src="./img/image7.jpg", alt="1")
+  .main_container
+    .main_content
+      .link1   
+        +link('#', 'Telescope')(class="btn")
+      .link2
+        +link('#', 'Asteroids')(class="btn")
+      .content
+        +list('./img/Photo.png','Chinmay Sarasvati','23 Sep 2019', '02:52PM', '$130.00')(class='item1')
+        +list('./img/user2.png','Dina Glenn','22 Sep 2019', '01:36AM', '$367.00')(class='item2')
+        +list('./img/user3.png','Izabella Tabakova','29 Oct 2019', '06:58PM', '$29.99')(class='item3')
+        +list('./img/user4.png','Opi Watihana','16 May 2019', '02:41PM', '$1240.29')(class='item4')
+      .container2 
+        +list('./img/user5.png','Babila Ebwélé','04 Apr 2019', '09:04AM', '$560.80')(class='item5')
+        +list('./img/user6.png','Brijamohan Mallick','06 Aug 2019', '08:22AM', '$765.00')(class='item6')
+        +list('./img/user7.png','Cayla Brister','07 Feb 2019', '07:02PM', '$78.00')(class='item7')
+        +list('./img/user8.png','Maeng Yeo-Jin','06 Aug 2019', '03:49AM', '$400.00')(class='item8')
+    .imgContent
+      .links    
+        +link('#', 'Design')(class="btn")
+        +link('#', 'Product')(class="btn")  
+        +link('#', 'Color')(class="btn")      
+      .container3        
+        img.item1(src="./img/image.jpg", alt="1")
+        img.item2(src="./img/image2.jpg", alt="1")
+        img.item3(src="./img/image3.png", alt="1")
+        img.item5(src="./img/image5.jpg", alt="1")
+        img.item4(src="./img/image4.png", alt="1")
+        img.item6(src="./img/image6.jpg", alt="1")
+        img.item7(src="./img/image7.jpg", alt="1")
 
-                
+          

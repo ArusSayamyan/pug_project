@@ -56,6 +56,41 @@
               font-weight: bold;
             }
           }
+          .item1 .price,
+          .item8 .price {
+            font-weight: bold;
+            font-size: 22px;
+          }
+          .item2 .price {
+            font-weight: bold;
+            font-size: 22px;
+            color: #ff3a29;
+          }
+          .item3 .price {
+            font-weight: bold;
+            font-size: 22px;
+            color: #02a0fc;
+          }
+          .item4 .price {
+            font-weight: bold;
+            font-size: 22px;
+            color: #4339f2;
+          }
+          .item5 .price {
+            font-weight: bold;
+            font-size: 22px;
+            color: #34b53a;
+          }
+          .item6 .price {
+            font-weight: bold;
+            font-size: 22px;
+            color: #ffb200;
+          }
+          .item7 .price {
+            font-weight: bold;
+            font-size: 22px;
+            color: #00000083;
+          }
         }
       }
       .imgContent {
@@ -71,6 +106,7 @@
         }
 
         .container3 {
+          object-fit: cover;
           display: grid;
           grid-template-columns: auto auto auto auto auto;
           grid-template-rows: 202px;

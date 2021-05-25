@@ -1,5 +1,5 @@
 mixin list(img, name, date, time, price)
-    ul
+    ul(class=attributes.class)
         img(src=img, alt="user")
         li.name= name 
         li.date= date 
@@ -14,3 +14,6 @@ mixin linkLoop()
                     
 mixin link(href, name)
   a(href=href)&attributes(attributes)= name
+
+
+
