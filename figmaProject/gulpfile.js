@@ -1,5 +1,5 @@
 let project_folder = "dist",
-    source_folder  = "src",
+    source_folder  = "#src",
     fs = require('fs');
 
 let path = {
@@ -11,15 +11,15 @@ let path = {
         fonts: project_folder + "/fonts/"
     },
     src:{
-        pug:   source_folder + "/pug/index.pug",
-        css:   source_folder + "/scss/style.scss",
+        pug:   source_folder + "/index.pug",
+        css:   source_folder + "/scss/main.scss",
         js:    source_folder + "/js/main.js",
         img:   source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: source_folder + "/fonts/*.ttf"
     },
     watch:{
         pug:   source_folder + "/**/*.pug",
-        css:   source_folder + "/scss/style.scss",
+        css:   source_folder + "/scss/main.scss",
         js:    source_folder + "/js/**/*.js",
         img:   source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
     }, 

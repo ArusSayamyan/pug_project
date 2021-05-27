@@ -15,17 +15,19 @@
   box-sizing: border-box;
   font-family: "DMSans";
   font-size: 14px;
+  // box-shadow: 2px 2px 2px 2px red;
 
   body {
     background-color: #f2f2f2;
 
     .main_container {
-      margin: 90px 90px 0 90px;
+      width: 100%;
       .main_content {
         display: grid;
         grid-template-columns: auto auto;
-        grid-gap: 80px;
+        gap: 40px;
         margin-bottom: 30px;
+        width: 100%;
 
         .link1 .btn,
         .link2 .btn {
@@ -38,7 +40,7 @@
           border: none;
           border-radius: 10px;
           padding: 30px 25px;
-          max-width: 100%;
+          width: 100%;
           background-color: #fff;
           img {
             margin-bottom: 10px;
@@ -92,8 +94,9 @@
             color: #00000083;
           }
         }
-      }
+      }      
       .imgContent {
+        width: 100%;
         grid-column: 1/ span 2;
         .links {
           display: grid;
@@ -105,32 +108,9 @@
             font-size: 20px;
           }
         }
-
-        // .container3 {
-        //   display: grid;
-        //   grid-template-columns: 2fr repeat(4, 1fr);
-        //   grid-template-rows: 202px;
-        //   grid-gap: 30px;
-        //   width: 100%;
-        //   margin-top: 30px;
-        //   justify-items: end;
-        //   .item1 {
-        //     grid-row: 1 / span 2;
-        //     justify-self: start;
-        //   }
-        //   .item2 {
-        //     grid-row: 1 / span 2;
-        //     justify-self: end;
-          
-        //   }
-        //   .item5 {
-        //     grid-column: 4;
-        //     grid-row: 1 / span 2;
-        //   }
-        // }
         .container3{
           display: grid;
-          grid-template: 1fr / 2fr repeat(4, 1fr);
+          grid-template: 1fr /2fr repeat(4, 1fr);
           gap: 40px;
           justify-items: stretch;
           .item1 {
@@ -138,6 +118,12 @@
           }
           .item2 {
             grid-row: 1 / span 2;
+          }
+          .item3, .item6 {
+            margin-left: 20px;
+          }
+          .item2 {
+            margin-right: -20px;
           }
           .item5 {
             grid-column: 4;

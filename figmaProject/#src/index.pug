@@ -1,5 +1,5 @@
-extends main.pug
-include mixins/mixins.pug
+extends pug/main
+include pug/mixins/mixins
 
 block content
   .main_container
@@ -18,16 +18,16 @@ block content
         +list('./img/user6.png','Brijamohan Mallick','06 Aug 2019', '08:22AM', '$765.00')(class='item6')
         +list('./img/user7.png','Cayla Brister','07 Feb 2019', '07:02PM', '$78.00')(class='item7')
         +list('./img/user8.png','Maeng Yeo-Jin','06 Aug 2019', '03:49AM', '$400.00')(class='item8')
-      .imgContent
-        .links    
-          +link('#', 'Design')(class="btn")
-          +link('#', 'Product')(class="btn")  
-          +link('#', 'Color')(class="btn")      
-        .container3        
-          img.item1(src="./img/image.jpg", alt="1")
-          img.item2(src="./img/image2.jpg", alt="1")
-          img.item3(src="./img/image3.png", alt="1")
-          img.item5(src="./img/image5.jpg", alt="1")
-          img.item4(src="./img/image4.png", alt="1")
-          img.item6(src="./img/image6.jpg", alt="1")
-          img.item7(src="./img/image7.jpg", alt="1")
+    .imgContent
+      .links    
+        +link('#', 'Design')(class="btn")
+        +link('#', 'Product')(class="btn")  
+        +link('#', 'Color')(class="btn")      
+      .container3        
+        img.item1(src="./img/image.jpg", alt="1")
+        img.item2(src="./img/image2.jpg", alt="1")
+        img.item3(src="./img/image3.png", alt="1")
+        img.item5(src="./img/image5.jpg", alt="1")
+        img.item4(src="./img/image4.png", alt="1")
+        img.item6(src="./img/image6.jpg", alt="1")
+        img.item7(src="./img/image7.jpg", alt="1")
